@@ -194,8 +194,8 @@ body {
 .Description .button-explorer {
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
-  height: 70px;
+  width: 50%;
+  height: 80px;
   margin-top: 0px;
   justify-content: center;
   align-items: center;
@@ -210,7 +210,6 @@ body {
 }
 .Description .button-explorer:hover {
   background: linear-gradient(to left, #9356DC, #ab60d5);
-  box-shadow: 0 3 15px black;
   scale: 1.05;
 }
 
