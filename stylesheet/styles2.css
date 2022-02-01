@@ -123,21 +123,21 @@ body {
   animation: appear 12s;
   -moz-animation: appear 12s; /* Firefox */
   -webkit-animation: appear 12s; /* Safari et Chrome */
-  animation-delay: 500ms forwards;
+  animation-delay: 500ms;
 }
 
 .Dish-menu {
   animation: appear 10s;
   -moz-animation: appear 10s; /* Firefox */
   -webkit-animation: appear 10s; /* Safari et Chrome */
-  animation-delay: 500s forwards; 
+  animation-delay: 500ms; 
 }
 
 .Dessert-menu {
   animation: appear 7s;
   -moz-animation: appear 7s; /* Firefox */
   -webkit-animation: appear 7s; /* Safari et Chrome */
-  animation-fill-mode: 200s forwards;
+  animation-delay: 200ms;
 }
 @keyframes appear {
   0% {
@@ -187,7 +187,7 @@ body {
 }
 
 .Menu-entry:hover .check {
-  width: 50px;
+  width: 150px;
   transition: 0.45s ease-in-out;
 }
 
@@ -206,7 +206,6 @@ body {
   margin: 0px 0px 0px 15px;
   width: 70%;
   font-weight: 400;
-  font-size: auto;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -276,7 +275,6 @@ body {
   width: 70%;
   margin: 0px 0px 0px 15px;
   font-weight: normal;
-  font-size: auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -328,7 +326,6 @@ body {
   width: 70%;
   margin: 0px 0px 0px 15px;
   font-weight: normal;
-  font-size: auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
