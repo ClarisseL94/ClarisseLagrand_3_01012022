@@ -30,10 +30,10 @@ body {
 
 .Spinner {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 300px;
-  margin: auto;
+  width: 100%;
+  top: 30%;
+  left: 0%;
+  height: 500px;
 }
 
 #text {
@@ -601,6 +601,10 @@ body {
   width: auto;
   font-size: 20px;  
   }
+  
+  .liste-informations li:hover{
+    text-decoration: underline;
+  }
 }  
 
 @media only screen and (min-width:1024px) { /* pc */
@@ -725,6 +729,10 @@ body {
   justify-content: center;
   width: auto;
   font-size: 20px;  
+  }
+  
+   .liste-informations li:hover{
+    text-decoration: underline;
   }
 }  
   
