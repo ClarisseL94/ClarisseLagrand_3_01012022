@@ -1,19 +1,19 @@
 body {
-    font-family: "Roboto", sans-serif;
-    margin: auto;
-    padding: 0;
-    background-color: white;
-    min-width: 250px;
-    max-width: 600px;
-    cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  padding: 0;
+  background-color: white;
+  min-width: 250px;
+  max-width: 600px;
+  cursor: pointer;
 }
 
-  .navbar {
+.navbar {
+  display: flex;
   position: sticky;
   background: white;
-  height: 65px;
-  box-shadow: 0 2px 4px #636363cc;
-  display: flex;
+  height: 75px;
+  box-shadow: 0 2px 2px #d9d9d9;
   justify-content: center;
   align-items: center;
   z-index: 2;
@@ -21,30 +21,29 @@ body {
 
   .fa-arrow-left {
    text-decoration: none;
-   color: grey;
-   font-weight: bold;
-   font-size: 20px;
+   color: black;
+   font-weight: 900;
+   font-size: 25px;
    position: absolute;
    left: 20px;
-   top: 50%;
-   transform: translateY(-50%); 
+   top: 35%;  
 }
 .fa-arrow-left:hover {
-  color: #333333;
+  color: grey;
 }
 
 #logo .logo{
-    display: flex;
-    margin-left: 0px;
-    width: 190px;
+  display: flex;
+  margin-left: 0px;
+  width: 190px;
 }
   
 .navbar .logo {
-    display: flex;
-    max-width: 100%;
-    max-height: 100%;
-    font-family: 'shrikhand';
-    margin: 0px;
+   display: flex;
+   max-width: 100%;
+   max-height: 100%;
+   font-family: 'shrikhand';
+   margin: 0px;
 }
 
 .background {
@@ -60,7 +59,7 @@ body {
 
 .Restaurant-menu{
   position: relative;
-  background-color: #ececec;
+  background-color: #f2f2f2;
   border-radius: 45px 45px 0px 0px;
   margin-top: -110px;
   padding-bottom: 10px;
@@ -96,17 +95,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.Restaurant-menu .Menu-entry{
-    animation: fadein 4s;
-}
-.Menu-entry:hover .check {
-  transform: translateX(0px);
-  transition: 0.5s ease-in-out;
-}
-
 .enter-title h2{
-  font-weight: 500;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 20px;
   margin: 5px;
 }
 
@@ -114,7 +105,7 @@ body {
   background-color: #99E2D0;
   margin: 5px;
   height: 6px;
-  width: 7%;
+  width: 10%;
 }
 
 .Restaurant-menu .Menu-entry{
@@ -129,84 +120,24 @@ body {
 }
 
 .Entry-menu {
-  animation: appear 0s;
-  -moz-animation: appear 1s; /* Firefox */
-  -webkit-animation: appear 5s; /* Safari et Chrome */
-  animation-fill-mode: backwards;
-}
-@keyframes appear {
-  0% {
-      transform: translateY(-100px);
-      opacity:0;
-    }
-100% {
-      transform: translateY(0);
-      opacity:1;
-    }
-}
-@-moz-keyframes appear { /* sur Firefox */
-  0%  {
-      transform: translateY(-100px);
-      opacity:0;
-    }
-100%  {
-      transform: translateY(0);
-      opacity:1;
-    }
-}
-@-webkit-keyframes appear { /* sur Safari et Chrome */
-  0%  {
-       transform: translateY(-100px);
-       opacity:0;
-    }
-100%  {
-       transform: translateY(0);
-       opacity:1;
-    }
+  animation: appear 12s;
+  -moz-animation: appear 12s; /* Firefox */
+  -webkit-animation: appear 12s; /* Safari et Chrome */
+  animation-delay: 500ms forwards;
 }
 
 .Dish-menu {
-  animation: appear 0s;
-  -moz-animation: appear 0s; /* Firefox */
-  -webkit-animation: appear 5s; /* Safari et Chrome */
-  animation-delay: 500ms forwards;
-  
+  animation: appear 10s;
+  -moz-animation: appear 10s; /* Firefox */
+  -webkit-animation: appear 10s; /* Safari et Chrome */
+  animation-delay: 500s forwards; 
 }
-@keyframes appear {
-  0% {
-      transform: translateY(-300px);
-      opacity:0;
-    }
-100% {
-      transform: translateY(0);
-      opacity:1;
-    }
-}
-@-moz-keyframes appear { /* sur Firefox */
-  0%  {
-      transform: translateY(-300px);
-      opacity:0;
-    }
-100%  {
-      transform: translateY(0);
-      opacity:1;
-    }
-}
-@-webkit-keyframes appear { /* sur Safari et Chrome */
-  0%  {
-       transform: translateY(-300px);
-       opacity:0;
-    }
-100%  {
-       transform: translateY(0);
-       opacity:1;
-    }
-}
+
 .Dessert-menu {
-  animation: appear 0s;
-  -moz-animation: appear 0s; /* Firefox */
-  -webkit-animation: appear 5s; /* Safari et Chrome */
-  animation-delay: 100ms;
+  animation: appear 7s;
+  -moz-animation: appear 7s; /* Firefox */
+  -webkit-animation: appear 7s; /* Safari et Chrome */
+  animation-fill-mode: 200s forwards;
 }
 @keyframes appear {
   0% {
@@ -218,7 +149,7 @@ body {
       opacity:1;
     }
 }
-@-moz-keyframes appear { /* sur Firefox */
+@-moz-keyframes appear { /* Firefox */
   0%  {
       transform: translateY(-500px);
       opacity:0;
@@ -228,7 +159,7 @@ body {
       opacity:1;
     }
 }
-@-webkit-keyframes appear { /* sur Safari et Chrome */
+@-webkit-keyframes appear { /* Safari et Chrome */
   0%  {
        transform: translateY(-500px);
        opacity:0;
@@ -238,82 +169,81 @@ body {
        opacity:1;
     }
 }
+
 .SideAndPrice {
  display: flex;
  justify-content: space-between;
  overflow: hidden;
  width: 100%;
- transform-origin: left 50%;
  transition-duration: 0.5s;
 }
 
 .price{
 	position: absolute;
 	right: 20px;
-  top: 20px;
+  top: 30px;
   font-size: 20px;
   font-weight: 700;
-	transition: left 1s, transform 1s;
-	white-space: nowrap;
+}
+
+.Menu-entry:hover .check {
+  width: 50px;
+  transition: 0.45s ease-in-out;
 }
 
 .Menu-entry:hover .price{
-	right: 15%;
-	transform: translateX(40%);
-  transition: 0.5s ease-in-out;
+	transform: translateX(-230%);
+  transition: 0.45s ease-in-out;
+}
+
+.Menu-entry:hover .side-entry{
+  width: 50%;
+  text-overflow: ellipsis;
+  transition: 0.45s ease-in-out;
 }
 
 .side-entry {
   margin: 0px 0px 0px 15px;
+  width: 70%;
   font-weight: 400;
-  font-size: 20px;
+  font-size: auto;
   white-space: nowrap;
-  overflow: visible;
-  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .check {
   position: absolute;
-  background-color: #99E2D0;
+  width: 65px;
+  transform: translateX(65px);
+  overflow: hidden;
   top: 0;
   bottom: 0;
   right: 0;
-  width: 65px;
   transform-origin: right 50%;
   border-radius: 0px 20px 20px 0px;
-  transform: translateX(65px);
-  overflow: hidden;
+  background-color: #99E2D0;
 }
 
 .check .fa-check-circle {
   position: absolute;
-  left: 5px;
-  top: 17px;
-  font-size: 37px;
+  left: 18px;
+  top: 18px;
+  font-size: 45px;
   color: white;
-  opacity: 1;
-  transition: transform 700ms;
-}
-.fa-check-circle{ 
-  width: 15px;
-  height: 15px;
-  color: grey;
-  margin-left: 10px;
-  transition: transform 700ms;
 }
 
 .Menu-entry h3{
  margin: 15px 0px 5px 15px;
- width: 70%;
- font-size: 22px;
+ font-size: 17px;
+ font-family: Roboto,sans-serif;
+ text-overflow: ellipsis;
  white-space: nowrap;
  overflow: hidden;
- text-overflow: ellipsis;
 }
 
 .dish-title h2{
-  font-weight: 500;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 20px;
   margin: 5px;
 }
 
@@ -333,37 +263,37 @@ body {
 }
 
 .dish:hover .check {
-  transform: translateX(0px);
-  transition: 0.5s ease-in-out;
+  width: 150px;
+  transition: 0.45s ease-in-out;
+}
+
+.dish:hover .price {
+	transform: translateX(-250%);
+  transition: 0.45s ease-in-out;
 }
 
 .side-dish {
+  width: 70%;
   margin: 0px 0px 0px 15px;
   font-weight: normal;
-  font-size: 20px;
+  font-size: auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.dish:hover .price{
-	right: 15%;
-	transform: translateX(50%);
-  transition: 0.5s ease-in-out;
-}
-
 .dish h3 {
   margin: 15px 0px 5px 15px;
-  width: 70%;
-  font-size: 22px;
+  font-size: 17px;
+  width: 55%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .dessert-title h2 {
-  font-weight: 500;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 20px;
   margin: 5px;
 }
 
@@ -379,29 +309,35 @@ body {
 }
 
 .dessert:hover .check {
-  transform: translateX(0px);
-  transition: 0.5s ease-in-out;
+  width: 150px;
+  transition: 0.45s ease-in-out;
+}
+
+.dessert:hover .price{
+	transform: translateX(-250%);
+  transition: 0.45s ease-in-out;
+}
+
+.dessert:hover .side-dessert{
+  width: 50%;
+  text-overflow: ellipsis;
+  transition: 0.45s ease-in-out;
 }
 
 .side-dessert {
+  width: 70%;
   margin: 0px 0px 0px 15px;
   font-weight: normal;
-  font-size: 20px;
+  font-size: auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.dessert:hover .price{
-	right: 15%;
-	transform: translateX(50%);
-  transition: 0.5s ease-in-out;
-}
-
 .dessert h3 {
   margin: 15px 0px 5px 15px;
   width: 70%;
-  font-size: 22px;
+  font-size: 17px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -524,39 +460,47 @@ body {
   width: 45%;
 }
   
+.Menu-entry:hover .check {
+  width: 120px;
+  transition: 0.45s ease-in-out;
+}
+
 .Menu-entry:hover .price{
-	right: 20%;
-	transform: translateX(20%);
-  transition: 0.5s ease-in-out;
-}  
+	transform: translateX(-250%);
+  transition: 0.45s ease-in-out;
+} 
 
 .Menu h3{
-  font-size: 20px;  
-  } 
+  font-size: 15px; 
+}
   
 .Menu p {
-  font-size: 15px;
-  } 
+ font-size: 14px;
+} 
   
 .check .fa-check-circle {
-  left: 5px;
-  top: 15px;
-  font-size: 40px;
+  left: 10px;
+  top: 20px;
+  font-size: 35px;
 }
 
 .Dish-menu {
   height: 350px;
   width: 45%;
   position: absolute;
-  top:14.7%;
+  top:14.5%;
   left: 50%;
 }
   
-.dish:hover .price{
-	right: 20%;
-	transform: translateX(20%);
-  transition: 0.5s ease-in-out;
-}   
+.dish:hover .check {
+  width: 120px;
+  transition: 0.45s ease-in-out;
+}
+
+.dish:hover .price {
+	transform: translateX(-170%);
+  transition: 0.45s ease-in-out;
+}  
 
 .Dessert-menu {
   margin-left: 25%;
@@ -565,11 +509,15 @@ body {
   width: 50%; 
 }
 
+.dessert:hover .check {
+  width: 120px;
+  transition: 0.45s ease-in-out;
+}
+
 .dessert:hover .price{
-	right: 20%;
-	transform: translateX(20%);
-  transition: 0.5s ease-in-out;
-}  
+	transform: translateX(-250%);
+  transition: 0.45s ease-in-out;
+} 
   
 .line-title {
   width: 20%;
@@ -624,7 +572,11 @@ body {
   width: auto;
   font-size: 17px;  
   }
-}    
+  
+.liste-informations li:hover{
+  text-decoration: underline;
+  }  
+}   
   
 @media only screen and (min-width:1024px) { /* pc */  
   
@@ -640,16 +592,53 @@ body {
  left: 40%;
  height: 300px;
  margin: auto;
-}   
- 
-.Menu-entry .check {
-  width: 55px;
+} 
+
+@keyframes appear {
+  0% {
+      transform: translateX(-500px);
+      opacity:0;
+    }
+100% {
+      transform: translateX(0);
+      opacity:1;
+    }
 }
-.dish check{
-  width: 40px;
+@-moz-keyframes appear { /* Firefox */
+  0%  {
+      transform: translateX(-500px);
+      opacity:0;
+    }
+100%  {
+      transform: translateX(0);
+      opacity:1;
+    }
 }
-.dessert .check {
-  width: 65px;
+@-webkit-keyframes appear { /* Safari et Chrome */
+  0%  {
+       transform: translateX(-500px);
+       opacity:0;
+    }
+100%  {
+       transform: translateX(0);
+       opacity:1;
+    }
+}  
+  
+.check .fa-check-circle {
+  left: 10px;
+  top: 20px;
+  font-size: 35px;
+}  
+  
+.Menu-entry:hover .check {
+  width: 120px;
+}  
+.dish:hover .check {
+  width: 120px;
+} 
+.dessert:hover .check {
+  width: 120px;
 }
   
 .title-h1-and-icon{
@@ -665,8 +654,8 @@ body {
 .Menu{
  display: grid;
  padding-bottom: 30px;
- grid-template-columns: 30% 35% 35%;
- grid-template-rows: 400px;
+ grid-template-columns: 32% 32% 32%;
+ grid-template-rows: 390px;
  margin: 0px;
  gap: 0.5rem;
 }  
@@ -675,29 +664,24 @@ body {
  display: grid;
  justify-content: center;
 }
-  
-.Menu-entry:hover .price{
-  right: 20%;
-	transform: translateX(20%);
-  transition: 0.5s ease-in-out;
-} 
-  
+    
 .dish-title{
   display: grid;
   justify-content: center;
 }
+ 
+.Menu-entry:hover .price{
+  right: 20%;
+	transform: translateX(20%);
+  transition: 0.5s ease-in-out;
+}   
   
 .dish:hover .price{
 	right: 18%;
 	transform: translateX(20%);
   transition: 0.5s ease-in-out;
 } 
-  
-.dessert-title{
-  display: grid;
-  justify-content: center;
-}
-  
+    
 .dessert:hover .price{
 	right: 20%;
 	transform: translateX(20%);
@@ -705,11 +689,12 @@ body {
 } 
   
 .Menu h3{
-  font-size: 17px;  
+  font-size: 15px;  
+  font-weight: 700;
 }
   
 .Menu p{
-  font-size: 15px;
+  font-size: 12px;
 }  
   
 .line-title{
@@ -717,6 +702,11 @@ body {
   width: 90%;
   justify-content: center;
 }
+  
+.dessert-title{
+  display: grid;
+  justify-content: center;
+}  
   
 .order-button {
   display: grid;
@@ -771,6 +761,10 @@ body {
   width: auto;
   font-size: 20px;  
   }
+ 
+.liste-informations li:hover{
+  text-decoration: underline;
+  }  
 }    
   
   
