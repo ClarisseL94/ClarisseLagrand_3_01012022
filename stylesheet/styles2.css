@@ -19,14 +19,14 @@ body {
   z-index: 2;
 }
 
-  .fa-arrow-left {
-   text-decoration: none;
-   color: black;
-   font-weight: 900;
-   font-size: 25px;
-   position: absolute;
-   left: 20px;
-   top: 35%;  
+.fa-arrow-left {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  font-size: 25px;
+  position: absolute;
+  left: 20px;
+  top: 35%;  
 }
 .fa-arrow-left:hover {
   color: grey;
@@ -120,24 +120,24 @@ body {
 }
 
 .Entry-menu {
-  animation: appear 12s;
-  -moz-animation: appear 12s; /* Firefox */
-  -webkit-animation: appear 12s; /* Safari et Chrome */
-  animation-delay: 500ms;
+  animation: appear 13s;
+  -moz-animation: appear 13s; /* Firefox */
+  -webkit-animation: appear 13s; /* Safari et Chrome */
+  animation-delay: 1ms;
 }
 
 .Dish-menu {
   animation: appear 10s;
   -moz-animation: appear 10s; /* Firefox */
   -webkit-animation: appear 10s; /* Safari et Chrome */
-  animation-delay: 500ms; 
+  animation-delay: 1ms; 
 }
 
 .Dessert-menu {
   animation: appear 7s;
   -moz-animation: appear 7s; /* Firefox */
   -webkit-animation: appear 7s; /* Safari et Chrome */
-  animation-delay: 200ms;
+  animation-delay: 1ms;
 }
 @keyframes appear {
   0% {
@@ -579,49 +579,10 @@ body {
   
 body {
  min-width: 1024px;
- max-width: 1300px; 
- margin: 0 auto;
+ max-width: none; 
+ margin: 0;
 }  
-  
-.Spinner {
- position: absolute;
- top: 30%;
- left: 40%;
- height: 300px;
- margin: auto;
-} 
-
-@keyframes appear {
-  0% {
-      transform: translateX(-500px);
-      opacity:0;
-    }
-100% {
-      transform: translateX(0);
-      opacity:1;
-    }
-}
-@-moz-keyframes appear { /* Firefox */
-  0%  {
-      transform: translateX(-500px);
-      opacity:0;
-    }
-100%  {
-      transform: translateX(0);
-      opacity:1;
-    }
-}
-@-webkit-keyframes appear { /* Safari et Chrome */
-  0%  {
-       transform: translateX(-500px);
-       opacity:0;
-    }
-100%  {
-       transform: translateX(0);
-       opacity:1;
-    }
-}  
-  
+    
 .check .fa-check-circle {
   left: 10px;
   top: 20px;
@@ -654,7 +615,7 @@ body {
  grid-template-columns: 32% 32% 32%;
  grid-template-rows: 390px;
  margin: 0px;
- gap: 0.5rem;
+ gap: 2%;
 }  
    
 .enter-title{
@@ -668,20 +629,20 @@ body {
 }
  
 .Menu-entry:hover .price{
-  right: 20%;
-	transform: translateX(20%);
+  right: 13%;
+	transform: translateX(15%);
   transition: 0.5s ease-in-out;
 }   
   
 .dish:hover .price{
-	right: 18%;
-	transform: translateX(20%);
+	right: 13%;
+	transform: translateX(15%);
   transition: 0.5s ease-in-out;
 } 
     
 .dessert:hover .price{
-	right: 20%;
-	transform: translateX(20%);
+	right: 13%;
+	transform: translateX(15%);
   transition: 0.5s ease-in-out;
 } 
   
