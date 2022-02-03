@@ -629,19 +629,19 @@ body {
 }
  
 .Menu-entry:hover .price{
-  right: 13%;
+  right: 15%;
 	transform: translateX(15%);
   transition: 0.5s ease-in-out;
 }   
   
 .dish:hover .price{
-	right: 13%;
+	right: 15%;
 	transform: translateX(15%);
   transition: 0.5s ease-in-out;
 } 
     
 .dessert:hover .price{
-	right: 13%;
+	right: 15%;
 	transform: translateX(15%);
   transition: 0.5s ease-in-out;
 } 
