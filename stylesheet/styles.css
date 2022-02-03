@@ -206,7 +206,7 @@ body {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 60px; 
   border: 0px;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .Description .button-explorer:hover {
   background: linear-gradient(to left, #9356DC, #ab60d5);
@@ -240,7 +240,6 @@ body {
   box-shadow: 2px 2px 7px #d3d3d3;
 }
 .HTU-action:hover {
-  transform:scale(1.00);
   background-color:#f2eafb;
   --c:#9356DC;
 }
@@ -610,6 +609,7 @@ body {
   
 body {
   min-width: 1024px;
+  max-width: none;
 }
   
 #logo .logo{
@@ -691,6 +691,7 @@ body {
 .restaurants .bloc-restaurants{
   display: grid;  
   width: 100%;
+  margin: 1.5%;
   grid-template-columns: 2fr 2fr;
 }
   
