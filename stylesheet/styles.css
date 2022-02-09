@@ -116,7 +116,7 @@ body {
 #logo .logo{
   display: flex;
   margin-left: 0px;
-  width: 190px;
+  width: 160px;
 }
 
 .navbar .logo {
@@ -141,12 +141,12 @@ body {
 
 .icon-location .fa-map-marker-alt {
   display: flex;
-  width: 60px;
+  width: 50px;
   height: 50px;
-  font-size: 20px;
+  font-size: 17px;
   justify-content: center;
   align-items: center;
-  margin-left: 15px;
+  margin-left: 0px;
 }
 
 .research-bar {
@@ -154,7 +154,7 @@ body {
   border-color: transparent;
   max-width: 50%;
   max-height: 100%;
-  font-size: 20px;
+  font-size: 17px;
   color: black;
   font-family: 'Roboto';
   font-weight: 500;
@@ -166,7 +166,7 @@ body {
   width: 100%;
   justify-content: center;
   align-content: center;
-  height: 350px;
+  height: 250px;
   background-color: #f2f2f2;
 }
 
@@ -174,8 +174,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: -50px;
-  margin-bottom: 40px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   width: 80%;
   text-align: center;
 }
@@ -185,8 +185,9 @@ body {
   flex-wrap: wrap;
   width: 90%;
   margin-top: 0px;
-  margin-bottom: 30px;
-  font-size: 15px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  font-family: 'roboto', sans-sérif;
   font-weight: 400;
   text-align: center;
 }
@@ -194,14 +195,13 @@ body {
 .Description .button-explorer {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
-  height: 60px;
+  width: 60%;
+  height: 50px;
   margin-top: 0px;
-  margin-bottom: -40px;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
   color: white;
   cursor: pointer;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -218,25 +218,26 @@ body {
   display: block;
   margin-top: 50px;
   background-color: white;
-  margin: 0px 20px;
+  margin: 0px 5px;
 }
 
 .HowToUse .HTU-title {
   display: flex;
   height: 30px;
-  margin-left: 10px;
-  font-size: 27px;
+  margin-left: 16px;
+  font-size: 25px;
 }
 
 .HTU-action {
   --c:grey;
   text-decoration: none;
   display: flex;
-  width: 90%;
+  width: 87%;
   align-items: center;
   background: #ececec;
   border-radius: 20px;
-  margin: 10px 20px 30px 25px;
+  margin-bottom: 20px;
+  margin-left: 25px;
   cursor: pointer;
   box-shadow: 2px 2px 7px #d3d3d3;
 }
@@ -278,22 +279,23 @@ body {
 .HTU-action .HTU-text {
   text-decoration: none;
   color: black;
-  font-weight: bold;
-  font-size: 19px;
+  font-weight: 500;
+  font-size: 13px;
   padding: 27px;
   margin: 0;
 }
 
 .HTU-number{
   display: flex;
+  font-size: 12px;
   justify-content: center;
   align-items: center;
-  width: 35px;
-  height: 35px;
+  width: 20px;
+  height: 20px;
   margin: 0px;
   position: relative;
-  top: 0px;
-  left: -15px;
+  top: 2px;
+  left: -10px;
   background-color: #9356DC;
   color: white;
   border-radius: 30px;
@@ -310,26 +312,18 @@ body {
   padding-bottom: 25px;
 }
 
-.restaurants {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
-
 .restaurants .title-h2  {
   display: flex;
-  width: 100%;
-  height: 30px;
-  font-size: 27px;
-  margin-left: 10px;
-  margin-top: 20px;
+  font-size: 25px;
+  padding-top: 30px;
+  margin-left: 19px;
 }
 
 .restaurantcardimgimg {
   display: flex;
   object-fit: cover;
   width: 100%;
-  height: 240px;
+  height: 150px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   }
@@ -337,10 +331,11 @@ body {
 .restaurant_full-card {
   display: flex;
   justify-content: center;
-  width: 95%;
-  height: 300px;
+  width: 87%;
+  height: 210px;
   padding: 0px;
-  margin: 2%;
+  margin-left: 20px;
+  margin-bottom: 20px;
   background-color: white;
   box-shadow: 0 0 20px #0000002e;
   border-radius: 15px;
@@ -356,7 +351,8 @@ body {
   position: relative;
   top: -35px;
   left: 85%;
-  font-size: 30px;
+  font-size: 25px;
+  color: grey;
   opacity: 1;
   transition: 0.5s ease-in-out;
 }
@@ -376,37 +372,39 @@ body {
   margin-top: 10px;
   margin-left: 15px;
   color: black;
+  font-weight: 600;
 }
 
 .restaurant_full-card .case-text p {
   margin: 0px;
   margin-left: 15px;
   color: black; 
+  font-weight: 300;
 }
 
 .rest-newtext {
   width: 90px;
-  height: 30px;
+  height: 25px;
   background-color: #99E2D0;
   position: relative;
-  top: -290px;
-  left: 70%;
+  top: -210px;
+  left: 65%;
 }
 
 .rest-new_text {
   display: flex;
   width: 70px;
   height: 15px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   color: green;
   position: relative;
-  top: 5px;
+  top: 3px;
   left: 12%;
 }
 
 .rest-newtext  {
-   animation-duration: .9s;
+   animation-duration: 1.5s;
    animation-name: clignoter;
    animation-iteration-count: infinite;
    transition: none;
@@ -424,6 +422,8 @@ body {
 }
 
 .footer-informations {
+  display: flex;
+  flex-direction: column;
   margin: 0px 20px;
 }
 
@@ -431,12 +431,10 @@ body {
   max-width: 70%;
   max-height: 100%;
   font-family: 'shrikhand';
-  margin: 0px;
 }
 
-#logo img {
-  display: flex;
-  margin-left: 15px;  
+.bloc-logo {
+  margin-left: 15px;
 }
 
 .liste-informations li  {
@@ -446,13 +444,25 @@ body {
 }
 
 .filters-button {
+  display: flex;
+  text-align: center;
   border: 0px;
-  margin: 0px; 
-  
+  margin: 0px;   
 }
 
 .filters-button i {
-  margin-right: 5px;
+  display: inline-block;
+  margin-right: 7px;
+  margin-left: 5px;
+}
+
+.filters-button .fa-utensils {
+  font-size: 20px;
+}
+
+.filters-button .fa-hands-helping {
+  font-size: 16px;
+  margin-right: 12px;
 }
 
 .liste-informations .filters-button p{
@@ -478,7 +488,7 @@ body {
 
 .liste-informations {
   padding: 5px;
-  margin: 0px;
+  margin: 5px;
 }
 
 /* media queries */
