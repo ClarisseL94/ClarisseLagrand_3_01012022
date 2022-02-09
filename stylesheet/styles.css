@@ -17,7 +17,7 @@ body {
   overflow: hidden;
   animation: fadeout 0.2s 3s forwards;
 }
-  @Keyframes fadeout {
+  @Keyframes fadeout{
     0% {
   opacity: 100%;
 }
