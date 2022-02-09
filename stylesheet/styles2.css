@@ -3,8 +3,7 @@ body {
   margin: auto;
   padding: 0;
   background-color: white;
-  min-width: 250px;
-  max-width: 600px;
+  max-width: 767px;
   cursor: pointer;
 }
 
@@ -22,8 +21,7 @@ body {
 .fa-arrow-left {
   text-decoration: none;
   color: black;
-  font-weight: 900;
-  font-size: 25px;
+  font-size: 20px;
   position: absolute;
   left: 20px;
   top: 35%;  
@@ -35,14 +33,13 @@ body {
 #logo .logo{
   display: flex;
   margin-left: 0px;
-  width: 190px;
+  width: 160px;
 }
   
 .navbar .logo {
    display: flex;
    max-width: 100%;
    max-height: 100%;
-   font-family: 'shrikhand';
    margin: 0px;
 }
 
@@ -67,17 +64,17 @@ body {
 }
 
 .Page-menu{
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 
 .title-h1-and-icon {
   display: flex;
   width: 95%;
-  margin: 10px;
+  margin: 5px;
   align-items: center;
   justify-content: space-between;
   font-family: "shrikhand";
-  font-size: 27px;
+  font-size: 20px;
 }
 
 .fa-heart {
@@ -96,16 +93,17 @@ body {
 }
 
 .enter-title h2{
+  font-family: roboto;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   margin: 5px;
 }
 
 .line-title {
   background-color: #99E2D0;
   margin: 5px;
-  height: 6px;
-  width: 10%;
+  height: 3px;
+  width: 15%;
 }
 
 .Restaurant-menu .Menu-entry{
@@ -180,24 +178,24 @@ body {
 
 .price{
 	position: absolute;
-	right: 20px;
-  top: 30px;
-  font-size: 20px;
+	right: 25px;
+  top: 22px;
+  font-size: 15px;
   font-weight: 700;
 }
 
 .Menu-entry:hover .check {
-  width: 150px;
+  width: 110px;
   transition: 0.45s ease-in-out;
 }
 
 .Menu-entry:hover .price{
-	transform: translateX(-230%);
-  transition: 0.45s ease-in-out;
+	transform: translateX(-100%);
+  transition: 0.50s ease-in-out;
 }
 
 .Menu-entry:hover .side-entry{
-  width: 50%;
+  width: 55%;
   text-overflow: ellipsis;
   transition: 0.45s ease-in-out;
 }
@@ -205,6 +203,7 @@ body {
 .side-entry {
   margin: 0px 0px 0px 15px;
   width: 70%;
+  font-size: 13px;
   font-weight: 400;
   white-space: nowrap;
   overflow: hidden;
@@ -225,15 +224,15 @@ body {
 
 .check .fa-check-circle {
   position: absolute;
-  left: 18px;
-  top: 18px;
-  font-size: 45px;
+  left: 5px;
+  top: 25px;
+  font-size: 35px;
   color: white;
 }
 
 .Menu-entry h3{
  margin: 15px 0px 5px 15px;
- font-size: 17px;
+ font-size: 15px;
  font-family: Roboto,sans-serif;
  text-overflow: ellipsis;
  white-space: nowrap;
@@ -242,7 +241,7 @@ body {
 
 .dish-title h2{
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   margin: 5px;
 }
 
@@ -262,12 +261,18 @@ body {
 }
 
 .dish:hover .check {
-  width: 150px;
+  width: 110px;
   transition: 0.45s ease-in-out;
 }
 
 .dish:hover .price {
-	transform: translateX(-250%);
+	transform: translateX(-100%);
+  transition: 0.50s ease-in-out;
+}
+
+.dish:hover .side-dish{
+  width: 55%;
+  text-overflow: ellipsis;
   transition: 0.45s ease-in-out;
 }
 
@@ -275,6 +280,7 @@ body {
   width: 70%;
   margin: 0px 0px 0px 15px;
   font-weight: normal;
+  font-size: 13px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -282,8 +288,8 @@ body {
 
 .dish h3 {
   margin: 15px 0px 5px 15px;
-  font-size: 17px;
-  width: 55%;
+  font-size: 15px;
+  width: 68%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -291,7 +297,7 @@ body {
 
 .dessert-title h2 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   margin: 5px;
 }
 
@@ -307,13 +313,13 @@ body {
 }
 
 .dessert:hover .check {
-  width: 150px;
+  width: 110px;
   transition: 0.45s ease-in-out;
 }
 
 .dessert:hover .price{
-	transform: translateX(-250%);
-  transition: 0.45s ease-in-out;
+	transform: translateX(-100%);
+  transition: 0.50s ease-in-out;
 }
 
 .dessert:hover .side-dessert{
@@ -324,6 +330,7 @@ body {
 
 .side-dessert {
   width: 70%;
+  font-size: 13px;
   margin: 0px 0px 0px 15px;
   font-weight: normal;
   white-space: nowrap;
@@ -334,7 +341,7 @@ body {
 .dessert h3 {
   margin: 15px 0px 5px 15px;
   width: 70%;
-  font-size: 17px;
+  font-size: 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -344,17 +351,17 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .order-button {
   display: flex;
-  width: 40%;
-  height: 60px;
+  width: 55%;
+  height: 50px;
   margin-top: 0px;
   justify-content: center;
   align-items: center;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
   color: white;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -375,14 +382,20 @@ body {
   color: white;
 }
 
+.footer-informations {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
 .footer-informations .logo {
   max-width: 70%;
   max-height: 100%;
   font-family: 'shrikhand';
 }
 
-.footer-informations {
-  margin: 0px 20px;
+.bloc-logo {
+  margin-left: 10px;
 }
 
 .liste-informations li  {
@@ -392,12 +405,25 @@ body {
 }
 
 .filters-button {
+  display: flex;
+  text-align: center;
   border: 0px;
-  margin: 0px; 
+  margin: 0px;   
 }
 
 .filters-button i {
-  margin-right: 5px; 
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.filters-button .fa-utensils {
+  font-size: 20px;
+}
+
+.filters-button .fa-hands-helping {
+  font-size: 16px;
+  margin-right: 12px;
 }
 
 .liste-informations .filters-button p{
@@ -405,6 +431,9 @@ body {
   margin: 5px;
   border: 0px;
   list-style-type: none;
+}
+.liste-informations .filters-button p:hover{
+  text-decoration: underline; 
 }
 
 .liste-informations a {
@@ -414,9 +443,12 @@ body {
   text-decoration: none;
   list-style-type: none;
 }
+.liste-informations a:hover{
+  text-decoration: underline;
+}
 
 .liste-informations {
-  padding: 15px;
+  padding: 5px;
   margin: 5px;
 }
 
